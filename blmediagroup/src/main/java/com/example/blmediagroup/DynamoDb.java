@@ -19,12 +19,12 @@ public class DynamoDb {
     private AmazonDynamoDB buildAmazonDynamoDB() {
         return AmazonDynamoDBClientBuilder
                 .standard()
-                .withRegion("YOUR-REGION")
+                .withRegion("us-east-2")
                 .withCredentials(
                         new AWSStaticCredentialsProvider(
                                 new BasicAWSCredentials(
-                                        "YOUR-ACCESS-KEY",
-                                        "YOUR-SECRET-KEY"
+                                        "access",
+                                        "shhhh"
                                 )
                         )
                 )
