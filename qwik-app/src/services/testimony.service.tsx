@@ -12,28 +12,31 @@ export function getTestimonies(): Promise<any> {
 export function mockTestimonies(): Array<Testimony> {
   const testimonies: Array<Testimony> = [];
   const testimony1: Testimony = {
-    avatarPath: "",
+    avatarPath: "will-avatar.jpeg",
     createDate: "10/31/2022",
     date: "10/31/2021",
     description: "",
-    title: "",
+    title: "True Real Time",
     personName: "Will Newlin",
+    profession: "Director at YMCA",
   };
   const testimony2: Testimony = {
-    avatarPath: "",
+    avatarPath: "/rod-avatar.jpeg",
     createDate: "10/31/2022",
     date: "10/31/2021",
     description: "",
-    title: "",
+    title: "Highly Configurable!",
+    profession: "Almost a doctor",
     personName: "Rod Zuniga",
   };
   const testimony3: Testimony = {
-    avatarPath: "",
+    avatarPath: "/stephen-avatar.jpeg",
     createDate: "10/31/2022",
     date: "10/31/2021",
     description: "",
-    title: "",
-    personName: "Chris Andreev",
+    title: "Slick AF",
+    profession: "Founder",
+    personName: "Stephen Moreira",
   };
   testimonies.push(testimony1);
   testimonies.push(testimony2);

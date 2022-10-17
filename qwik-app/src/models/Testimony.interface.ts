@@ -6,4 +6,5 @@ export interface Testimony {
   description: string;
   personName: string;
   avatarPath: string;
+  profession: string;
 }

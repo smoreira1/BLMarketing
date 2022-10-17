@@ -8,15 +8,19 @@ export default component$((props: Testimony) => {
   return (
     <div>
       <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        Icon
+        <img
+          class="border border-primary border-1"
+          src={props.avatarPath}
+          style="width:50px;height:50px;border-radius: 25% 10%;"
+        ></img>
       </div>
       <div>
-        <h3 class="fs-2">{props.title}</h3>
-        <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
-        </p>
+        <h4 class="fs-2">{props.title}</h4>
+        <h6>
+          {props.personName} -{" "}
+          <span class="fst-italic">{props.profession}</span>
+        </h6>
+        <p>{props.description}</p>
       </div>
     </div>
   );

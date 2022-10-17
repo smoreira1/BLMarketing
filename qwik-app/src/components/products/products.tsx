@@ -5,7 +5,7 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="container px-4 py-5" id="testimoies">
+    <div class="container px-4 py-5" id="products">
       <h2 class="pb-2 border-bottom">Products</h2>
       <div class="px-4 py-5 my-5 text-center bg-light">
         <img
