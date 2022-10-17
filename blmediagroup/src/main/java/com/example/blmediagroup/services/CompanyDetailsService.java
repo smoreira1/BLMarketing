@@ -1,2 +1,6 @@
-package com.example.blmediagroup.services;public class CompanyDetailsService {
+package com.example.blmediagroup.services;
+
+public class CompanyDetailsService {
+
+
 }

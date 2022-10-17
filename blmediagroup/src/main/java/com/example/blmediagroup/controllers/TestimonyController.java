@@ -1,7 +1,8 @@
-package com.example.blmediagroup;
+package com.example.blmediagroup.controllers;
 
 import com.example.blmediagroup.models.Testimony;
 import com.example.blmediagroup.services.TestimonyService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +11,8 @@ import java.util.ArrayList;
 @RestController
 @RequestMapping(path = "/testimony")
 public class TestimonyController {
+
+    @Autowired
     private TestimonyService testimonyService;
     TestimonyController(TestimonyService testimonyService){
         this.testimonyService = testimonyService;

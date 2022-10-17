@@ -1,2 +1,4 @@
-package com.example.blmediagroup.controllers;public class CompanyDetailsController {
+package com.example.blmediagroup.controllers;
+
+public class CompanyDetailsController {
 }
