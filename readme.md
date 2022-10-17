@@ -27,11 +27,11 @@ Git Clone repo into your desired directory.
 
 2. Testing:
 
-- a. tbd
+- a. TBD
 
 3. e2e Testing:
 
-- a. tbd
+- a. TBD
 
 4. More:
 1. Check out the package.json to review all possible scripts and features.
