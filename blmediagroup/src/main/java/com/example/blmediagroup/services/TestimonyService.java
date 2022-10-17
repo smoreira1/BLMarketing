@@ -3,6 +3,8 @@ package com.example.blmediagroup.services;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.amazonaws.services.dynamodbv2.document.DeleteItemOutcome;
+import com.amazonaws.services.dynamodbv2.document.Table;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.model.ScanRequest;
 import com.amazonaws.services.dynamodbv2.model.ScanResult;
@@ -48,10 +50,14 @@ public class TestimonyService {
         getItemToUpdate.setDescription(testimony.getDescription());
         getItemToUpdate.setTitle(testimony.getTitle());
         getItemToUpdate.setDate(testimony.getDate());
+        getItemToUpdate.setCreatedDate(testimony.getCreatedDate());
         this.dynamoDBMapper.save(getItemToUpdate);
     }
 
     public void deleteTestimony(String itemId){
-
+        DynamoDB dynamoDB = new DynamoDB(new AmazonDynamoDBClient(
+                new ProfileCredentialsProvider()));
+        Table table = this.dynamoDBMapper.getTable("Testimony");
+        DeleteItemOutcome outcome = table.deleteItem("IDnum", 151);
     }
 }

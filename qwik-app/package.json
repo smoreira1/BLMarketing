@@ -37,6 +37,6 @@
   "dependencies": {
     "@builder.io/partytown": "^0.7.0",
     "@ionic/core": "^6.2.9",
-    "bootstrap": "^5.2.1"
+    "bootstrap": "^5.2.2"
   }
 }

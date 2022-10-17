@@ -1,0 +1,42 @@
+import { Testimony } from "~/models/Testimony.interface";
+import { getRuntimeConfig } from "./config.service";
+
+export function getTestimonies(): Promise<any> {
+  const testimonyRequest = new URL(
+    `${getRuntimeConfig().apiEndPoint}/testimony`
+  );
+  testimonyRequest.searchParams.set("companyDetails", "blmediagroup");
+  return fetch(testimonyRequest);
+}
+
+export function mockTestimonies(): Array<Testimony> {
+  const testimonies: Array<Testimony> = [];
+  const testimony1: Testimony = {
+    avatarPath: "",
+    createDate: "10/31/2022",
+    date: "10/31/2021",
+    description: "",
+    title: "",
+    personName: "Will Newlin",
+  };
+  const testimony2: Testimony = {
+    avatarPath: "",
+    createDate: "10/31/2022",
+    date: "10/31/2021",
+    description: "",
+    title: "",
+    personName: "Rod Zuniga",
+  };
+  const testimony3: Testimony = {
+    avatarPath: "",
+    createDate: "10/31/2022",
+    date: "10/31/2021",
+    description: "",
+    title: "",
+    personName: "Chris Andreev",
+  };
+  testimonies.push(testimony1);
+  testimonies.push(testimony2);
+  testimonies.push(testimony3);
+  return testimonies;
+}

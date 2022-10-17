@@ -19,16 +19,35 @@ Git Clone repo into your desired directory.
 
 ## QWIK set up
 
-1. Navigate to qwik-app and run npm install
-2. run 'npm run dev'
+1. Development:
+
+- a. Navigate to qwik-app and run npm install
+- b. run 'npm run dev'
+- c. You now should have a local server that will hot reload on development changes.
+
+2. Testing:
+
+- a. Navigate to qwik-app run ''
+
+3. e2e Testing:
+
+- a.
+
+4. More:
+1. Check out the package.json to review all possible scripts and features.
 
 ## Java Spring Boot Setup
 
+1. In resources/application.properties ensure these settings are pointing to your local docker container.
+
 ## AWS DynamoDB
 
-1. Navgiate to dynamodb
-2. run 'docker compose up'
+1. Ensure docker is runnning on your device.
+2. Navgiate to dynamodb
+3. run 'docker compose up'
+4. You should now have docker images running locally for the application to interact with.
 
 # Continuous Integration
 
-1. Azure pipeline on Azure Dev Ops will run the build, test and deploy to the trunk web app, be alert for any potential failures.
+1. Don't branch.
+2. Azure pipeline on Azure Dev Ops will run the build, test and deploy to the trunk web app, be alert for any potential failures.
